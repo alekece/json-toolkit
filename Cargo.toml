@@ -1,0 +1,27 @@
+[package]
+name = "json-toolkit"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+keywords = ["json", "pointer", "util", "toolkit", "ext"]
+authors = ["Alexis Le Provost <alexis.leprovost@outlook.com>"]
+homepage = "https://github.com/alekece/json-toolkit-rs"
+repository = "https://github.com/alekece/json-toolkit-rs"
+description = "An utility library providing pointer facilities and extending 3rd-parties JSON types"
+rust-version = "1.60.0"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[features]
+default = ["serde", "json"]
+serde = ["dep:serde", "serde_json"]
+json = ["dep:json"]
+
+[dependencies]
+derive_more = { version = "^0.99.17", default-features = false, features = ["display"] }
+thiserror = "^1.0.32"
+
+serde = { version = "^1.0.144", features = ["derive"], optional = true }
+serde_json = { version = "^1.0.85", optional = true }
+json = { version = "^0.12.4", optional = true }
