@@ -14,7 +14,7 @@ rust-version = "1.60.0"
 maintenance = { status = "actively-developed" }
 
 [features]
-default = ["serde", "json"]
+default = []
 serde = ["dep:serde", "serde_json"]
 json = ["dep:json"]
 
