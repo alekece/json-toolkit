@@ -10,7 +10,7 @@ fn decode_token(s: &str) -> String {
     s.replace("~1", "/").replace("~0", "~")
 }
 
-/// `Pointer`, a JSON pointer representation based on [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901).
+/// JSON pointer representation based on [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901).
 ///
 /// This type offers strong ordering over the underlying Unicode string:
 /// - JSON pointers are sorted by ascending depth.
