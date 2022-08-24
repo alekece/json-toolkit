@@ -2,7 +2,7 @@
 //!
 //! The `json-toolkit` crate exposes all the common manipulation/validation operation expected from a JSON pointer and support
 //! several JSON value representation :
-//! - Encode [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901) representation in [`Pointer`](crate::pointer::Pointer) type.
+//! - Encode [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901) representation in [`Pointer`] type.
 //! - Manipulate any JSON value by a JSON pointer.
 //!
 //! ```
@@ -25,9 +25,9 @@
 //! ## Features
 //!
 //! `json-toolkit` supports several JSON value representation, and has features that may be enabled or disabled :
-//! - `serde`: Enable [`serde`](https://docs.rs/serde/latest/serde/) {de}serialization on [`Pointer`](crate::pointer::Pointer) type
-//! and implement [`ValueExt`](crate::ValueExt) on [`serde_json::Value`](https://docs.rs/serde_json/latest/serde_json/enum.Value.html) type.
-//! - `json`: Implement [`ValueExt`](crate::ValueExt) on [`json::JsonValue`](https://docs.rs/json/latest/json/enum.JsonValue.html) type.
+//! - `serde`: Enable [`serde`](https://docs.rs/serde/latest/serde/) {de}serialization on [`Pointer`] type
+//! and implement [`ValueExt`]on [`serde_json::Value`](https://docs.rs/serde_json/latest/serde_json/enum.Value.html) type.
+//! - `json`: Implement [`ValueExt`] on [`json::JsonValue`](https://docs.rs/json/latest/json/enum.JsonValue.html) type.
 
 mod error;
 #[cfg(feature = "json")]

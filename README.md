@@ -4,13 +4,11 @@
 [![CI](https://github.com/alekece/json-toolkit-rs/actions/workflows/ci.yaml/badge.svg)](https://github.com/alekece/json-toolkit-rs/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/alekece/json-toolkit-rs/branch/main/graph/badge.svg?token=40M1Q98JMQ)](https://codecov.io/gh/alekece/json-toolkit-rs)
 
-<!-- cargo-sync-readme start -->
-
 # json-toolkit
 
 The `json-toolkit` crate exposes all the common manipulation/validation operation expected from a JSON pointer and support
 several JSON value representation :
-- Encode [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901) representation in [`Pointer`](https://docs.rs/json-toolkit/latest/json-toolkit/pointer/struct.Pointer.html) type.
+- Encode [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901) representation in [`Pointer`](https://docs.rs/json-toolkit/latest/json_toolkit/pointer/struct.Pointer.html) type.
 - Manipulate any JSON value by a JSON pointer.
 
 ```rust
@@ -33,11 +31,9 @@ assert_eq!(id, Some(&1.into()));
 ## Features
 
 `json-toolkit` supports several JSON value representation, and has features that may be enabled or disabled :
-- `serde`: Enable [`serde`](https://docs.rs/serde/latest/serde/) {de}serialization on [`Pointer`](https://docs.rs/json-toolkit/latest/json-toolkit/pointer/struct.Pointer.html) type
-and implement [`ValueExt`](https://docs.rs/json-toolkit/latest/json-toolkit/trait.ValueExt.html) on [`serde_json::Value`](https://docs.rs/serde_json/latest/serde_json/enum.Value.html) type.
-- `json`: Implement [`ValueExt`](https://docs.rs/json-toolkit/latest/json-toolkit/trait.ValueExt.html) on [`json::JsonValue`](https://docs.rs/json/latest/json/enum.JsonValue.html) type.
-
-<!-- cargo-sync-readme end -->
+- `serde`: Enable [`serde`](https://docs.rs/serde/latest/serde/) {de}serialization on [`Pointer`](https://docs.rs/json-toolkit/latest/json_toolkit/struct.Pointer.html) type
+and implement [`ValueExt`](https://docs.rs/json-toolkit/latest/json_toolkit/trait.ValueExt.html) on [`serde_json::Value`](https://docs.rs/serde_json/latest/serde_json/enum.Value.html) type.
+- `json`: Implement [`ValueExt`](https://docs.rs/json-toolkit/latest/json_toolkit/trait.ValueExt.html) on [`json::JsonValue`](https://docs.rs/json/latest/json/enum.JsonValue.html) type.
 
 ## License
 
